@@ -16,14 +16,9 @@ From this directory run `python3 -m http.server 8000 --bind 127.0.0.1`, then vis
 
 ## Original club badge
 
-No badge was present when this page was built. The header reserves an empty 48 × 60 px area (32 × 45 px on mobile), without displaying an invented mark or a broken image. To add the approved original:
+The supplied original PNG is at `assets/images/caythorpe-cricket-club-badge.png` and is displayed in the header at 64 × 72 px (40 × 45 px on mobile). The image remains unaltered; CSS uses `object-fit: contain` to preserve the artwork and proportions. Alternative text and intrinsic dimensions are included.
 
-1. Place it in `assets/images/`, preserving its proportions and artwork.
-2. Replace `<span class="badge-slot" aria-hidden="true"></span>` with:
-   `<span class="badge-slot"><img src="assets/images/caythorpe-cricket-club-badge.svg" alt="Caythorpe Cricket Club badge" width="48" height="60"></span>`
-3. Adjust the filename to the actual asset format. Existing CSS uses `object-fit: contain`.
-
-There is deliberately no favicon or Open Graph image until a suitable genuine asset is available. No launch date, contact details or social accounts have been invented.
+There is deliberately no favicon or Open Graph image; the original badge is used only in the header. No launch date, contact details or social accounts have been invented.
 
 ## Cloudflare Pages — only after approval
 

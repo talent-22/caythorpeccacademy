@@ -1,0 +1,104 @@
+:root {
+  --maroon: #7A1F24;
+  --navy: #0D1B3D;
+  --gold: #C8A23A;
+  --white: #FFFFFF;
+  --paper: #F7F5F0;
+  --ink: #273248;
+  --muted: #596173;
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+p, h1, h2, blockquote { margin: 0; }
+.container { width: min(100% - 6rem, 1240px); margin-inline: auto; }
+.skip-link { position: absolute; top: 1rem; left: 1rem; z-index: 2; padding: .6rem 1rem; background: var(--white); color: var(--navy); transform: translateY(-200%); }
+.skip-link:focus { transform: translateY(0); }
+a:focus-visible { outline: 3px solid var(--gold); outline-offset: 5px; }
+main:focus { outline: none; }
+.site-header { background: var(--navy); color: var(--white); }
+.club-identity { display: flex; align-items: center; gap: 1.1rem; min-height: 118px; border-bottom: 1px solid #ffffff26; }
+/* Preserve the original badge artwork and proportions. */
+.badge-slot { display: block; flex: 0 0 64px; width: 64px; height: 72px; }
+.badge-slot img { display: block; width: 100%; height: 100%; object-fit: contain; }
+.club-name { font-size: .88rem; font-weight: 650; letter-spacing: .16em; text-transform: uppercase; }
+.club-programme { margin-top: .2rem; color: #d0d5e0; font-size: .65rem; letter-spacing: .24em; text-transform: uppercase; }
+.header-year { margin-left: auto; color: #d0d5e0; font-size: .7rem; letter-spacing: .16em; text-transform: uppercase; }
+.hero { background: var(--navy); color: var(--white); }
+.hero-grid { display: grid; grid-template-columns: 1.55fr 1fr; align-items: stretch; gap: 4rem; padding-block: 5rem 6rem; }
+.hero-content { padding-block: 1.25rem; }
+.eyebrow { font-size: .68rem; line-height: 1.6; font-weight: 650; letter-spacing: .18em; text-transform: uppercase; }
+.launch-status { display: flex; align-items: center; gap: .7rem; color: var(--gold); margin-bottom: 2rem; }
+.launch-status span { width: 1.7rem; height: 1px; background: currentColor; }
+h1 { font-family: var(--serif); font-size: clamp(2.6rem, 4.7vw, 4.9rem); font-weight: 400; line-height: 1.07; letter-spacing: -.035em; }
+h1 span { display: block; }
+h1 span:first-child { margin-bottom: .25rem; }
+.hero-description { margin-top: 2rem; color: #d0d5e0; font-size: 1rem; line-height: 1.7; }
+.hero-note { margin-top: 3rem; font-size: .7rem; letter-spacing: .12em; text-transform: uppercase; color: #d0d5e0; }
+.motto-panel { position: relative; padding: 2.75rem 2.5rem; background: var(--maroon); border-top: 3px solid var(--gold); }
+.motto-panel .eyebrow { color: #f0d8a2; }
+.motto-panel blockquote { margin-top: 2rem; font-family: var(--serif); font-size: clamp(2rem, 3vw, 3.15rem); line-height: 1.15; letter-spacing: -.025em; }
+.motto-panel em { color: #f0d8a2; font-weight: 400; }
+.motto-caption { margin-top: 2rem; color: #eedadd; font-size: .65rem; }
+.introduction { padding-block: 6rem; }
+.introduction-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; }
+.introduction .eyebrow { color: var(--maroon); margin-bottom: 1.5rem; }
+h2 { font-family: var(--serif); font-size: clamp(1.85rem, 2.8vw, 2.75rem); line-height: 1.25; letter-spacing: -.025em; font-weight: 400; color: var(--navy); }
+h2 em { color: var(--maroon); }
+.age-note { margin-top: 2rem; font-size: .8rem; color: var(--muted); }
+.introduction-copy { max-width: 36rem; }
+.introduction-copy p + p { margin-top: 1.15rem; }
+.introduction-copy .lead { font-size: 1.2rem; line-height: 1.6; color: var(--navy); }
+.standards { padding-bottom: 5rem; }
+.standards-heading { border-top: 1px solid #0d1b3d2b; padding-top: 2rem; display: flex; justify-content: space-between; gap: 1.5rem; align-items: baseline; }
+.standards-heading h2 { font-family: var(--sans); color: var(--maroon); }
+.standards-heading p { font-size: .75rem; color: var(--muted); }
+.standards-list { padding: 0; margin: 2rem 0 0; list-style: none; display: grid; grid-template-columns: 1fr 1fr 1.2fr; }
+.standards-list li { display: flex; align-items: baseline; gap: 1rem; padding: 1rem 1.5rem; border-left: 1px solid #0d1b3d2b; color: var(--navy); font-size: clamp(.85rem, 1.5vw, 1.1rem); letter-spacing: .05em; font-weight: 650; text-transform: uppercase; }
+.standards-list li:first-child { border-left: 0; padding-left: 0; }
+.standard-number { color: var(--maroon); font-family: var(--serif); font-size: .9rem; font-style: italic; font-weight: 400; }
+.site-footer { padding-block: 2.75rem 1.5rem; background: var(--navy); color: #d0d5e0; font-size: .75rem; }
+.footer-grid { display: flex; justify-content: space-between; gap: 2rem; align-items: center; }
+.footer-club { color: var(--white); font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; margin-bottom: .3rem; }
+.footer-motto { font-family: var(--serif); font-style: italic; font-size: 1rem; }
+.copyright { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #ffffff26; }
+.copyright small { font-size: .65rem; }
+@media (min-width: 1500px) { .hero-grid { padding-block: 6rem 7rem; } }
+@media (max-width: 1000px) {
+  .container { width: calc(100% - 4rem); }
+  .hero-grid { gap: 2rem; }
+  .motto-panel { padding: 2.25rem 1.75rem; }
+  .introduction-grid { gap: 3rem; }
+  .standards-list li { padding-inline: 1rem; gap: .7rem; }
+}
+@media (max-width: 700px) {
+  .container { width: calc(100% - 2.5rem); }
+  .club-identity { min-height: 100px; gap: .75rem; }
+  .badge-slot { flex-basis: 40px; width: 40px; height: 45px; }
+  .club-name { font-size: .7rem; letter-spacing: .1em; }
+  .club-programme { font-size: .56rem; letter-spacing: .16em; }
+  .header-year { display: none; }
+  .hero-grid { grid-template-columns: 1fr; gap: 2.75rem; padding-block: 2.5rem 3rem; }
+  .hero-content { padding: 0; }
+  h1 { font-size: clamp(2.3rem, 8.3vw, 3.5rem); }
+  .launch-status { margin-bottom: 1.5rem; }
+  .hero-description { margin-top: 1.5rem; font-size: .9rem; }
+  .desktop-break { display: none; }
+  .hero-note { margin-top: 1.75rem; font-size: .6rem; }
+  .motto-panel { padding: 2rem; }
+  .motto-panel blockquote { font-size: 2.5rem; margin-top: 1.5rem; }
+  .motto-caption { margin-top: 1.5rem; }
+  .introduction { padding-block: 3.5rem; }
+  .introduction-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .introduction .eyebrow { font-size: .6rem; }
+  .age-note { margin-top: 1.5rem; }
+  .standards { padding-bottom: 3rem; }
+  .standards-heading { display: block; }
+  .standards-heading p { margin-top: .6rem; }
+  .standards-list { grid-template-columns: 1fr; margin-top: 1.25rem; }
+  .standards-list li, .standards-list li:first-child { border-left: 0; border-bottom: 1px solid #0d1b3d2b; padding: 1rem 0; gap: 1.2rem; font-size: 1rem; }
+  .footer-grid { display: block; }
+  .footer-motto { margin-top: 1.5rem; }
+}
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
